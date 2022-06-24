@@ -22,3 +22,10 @@ source install/setup.bash
 ros2 launch twist_mux_test twist_mux_test.launch.py
 ```
 
+
+'''
+### publish single twist message every second
+
+ros2 topic pub -r 1 /joy_cmd_vel geometry_msgs/msg/Twist '{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.8}}'
+
+'''
